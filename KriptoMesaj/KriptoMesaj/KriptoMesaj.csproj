@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7A5F77A8-DEDE-4CAE-B871-1087E1CF1519}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>KriptoMesaj</RootNamespace>
+    <AssemblyName>KriptoMesaj</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BeautyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChatHeader.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChatHeader.Designer.cs">
+      <DependentUpon>ChatHeader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmChat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmChat.Designer.cs">
+      <DependentUpon>FrmChat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLoginNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLoginNew.Designer.cs">
+      <DependentUpon>FrmLoginNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMainNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMainNew.Designer.cs">
+      <DependentUpon>FrmMainNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeBubble.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MeBubble.Designer.cs">
+      <DependentUpon>MeBubble.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NtwrkSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NtwrkSet.Designer.cs">
+      <DependentUpon>NtwrkSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="messages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="messages.Designer.cs">
+      <DependentUpon>messages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SearchBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SearchBox.Designer.cs">
+      <DependentUpon>SearchBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shaping.cs" />
+    <Compile Include="TypingBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TypingBox.Designer.cs">
+      <DependentUpon>TypingBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Users.Designer.cs">
+      <DependentUpon>Users.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yeniileti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yeniileti.Designer.cs">
+      <DependentUpon>yeniileti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yeniKayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yeniKayıt.Designer.cs">
+      <DependentUpon>yeniKayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YouBubble.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="YouBubble.Designer.cs">
+      <DependentUpon>YouBubble.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmChat.resx">
+      <DependentUpon>FrmChat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLoginNew.resx">
+      <DependentUpon>FrmLoginNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMainNew.resx">
+      <DependentUpon>FrmMainNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeBubble.resx">
+      <DependentUpon>MeBubble.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NtwrkSet.resx">
+      <DependentUpon>NtwrkSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="messages.resx">
+      <DependentUpon>messages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="yeniileti.resx">
+      <DependentUpon>yeniileti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yeniKayıt.resx">
+      <DependentUpon>yeniKayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YouBubble.resx">
+      <DependentUpon>YouBubble.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\CryptoMessageForm\CryptoMessageForm.Business\CryptoMessageForm.Business.csproj">
+      <Project>{3CF589F4-EFC9-4B02-A5C9-B2976F507E24}</Project>
+      <Name>CryptoMessageForm.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CryptoMessageForm\CryptoMessageForm.Entity\CryptoMessageForm.Entity.csproj">
+      <Project>{9B44AD3B-2919-4864-AC55-73943FC4432A}</Project>
+      <Name>CryptoMessageForm.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CryptoMessageForm\CryptoMessageForm\CryptoMessageForm.csproj">
+      <Project>{F2C33F71-F984-471E-9538-CC3B5A305350}</Project>
+      <Name>CryptoMessageForm</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\1.png" />
+    <None Include="Resources\1486348529-back-backwards-repeat-arrows-arrow_80455 %282%29.png" />
+    <None Include="Resources\1486348529-back-backwards-repeat-arrows-arrow_80455 %283%29.png" />
+    <None Include="Resources\1486348529-back-backwards-repeat-arrows-arrow_80455 %284%29.png" />
+    <None Include="Resources\1486348529-back-backwards-repeat-arrows-arrow_80455 %281%29.png" />
+    <None Include="Resources\1486348529-back-backwards-repeat-arrows-arrow_80455.png" />
+    <Content Include="Resources\1_32.png" />
+    <Content Include="Resources\2.jfif" />
+    <Content Include="Resources\2_32.png" />
+    <Content Include="Resources\3.jpg" />
+    <Content Include="Resources\3_32.png" />
+    <Content Include="Resources\4.jfif" />
+    <Content Include="Resources\4_32.png" />
+    <Content Include="Resources\5_32.png" />
+    <Content Include="Resources\Away_32.png" />
+    <None Include="Resources\son mesaj gönder.png" />
+    <None Include="Resources\giris.jpg" />
+    <None Include="Resources\cross_wrong_close_delete_icon_191608.png" />
+    <None Include="Resources\blurlu.jpg" />
+    <None Include="Resources\giris1.jpg" />
+    <Content Include="Resources\icons8_Attach_32.png" />
+    <Content Include="Resources\icons8_Attach_321.png" />
+    <Content Include="Resources\icons8_Call-white_32.png" />
+    <Content Include="Resources\icons8_Call_32.png" />
+    <Content Include="Resources\icons8_Chat_32.png" />
+    <Content Include="Resources\icons8_Close_Window_32.png" />
+    <Content Include="Resources\icons8_Delete_32.png" />
+    <Content Include="Resources\icons8_Email_Send_32.png" />
+    <Content Include="Resources\icons8_Maximize_Window_32.png" />
+    <Content Include="Resources\icons8_Menu_Vertical-white_32.png" />
+    <Content Include="Resources\icons8_Menu_Vertical_32.png" />
+    <Content Include="Resources\icons8_Minimize_Window_32.png" />
+    <Content Include="Resources\icons8_Minimize_Window_321.png" />
+    <Content Include="Resources\icons8_Neutral_32.png" />
+    <Content Include="Resources\icons8_Neutral_321.png" />
+    <Content Include="Resources\icons8_Paper_Plane_32.png" />
+    <Content Include="Resources\icons8_User_32.png" />
+    <Content Include="Resources\icons8_Video_Call-white_32.png" />
+    <Content Include="Resources\icons8_Video_Call_32.png" />
+    <None Include="Resources\in_door_communication_enter_log_in_login_icon_191647.png" />
+    <None Include="Resources\kişi ekle.png" />
+    <None Include="Resources\mesajlar son.png" />
+    <None Include="Resources\in_door_communication_enter_log_in_login_icon_1916471.png" />
+    <None Include="Resources\mesajlar son1.png" />
+    <Content Include="Resources\MsgDelivered_32.png" />
+    <Content Include="Resources\MsgError_32.png" />
+    <Content Include="Resources\MsgRead_32.png" />
+    <Content Include="Resources\MsgSending_32.png" />
+    <Content Include="Resources\MsgSent_32.png" />
+    <Content Include="Resources\offline_32.png" />
+    <Content Include="Resources\Online_32.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
